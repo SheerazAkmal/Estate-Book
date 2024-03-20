@@ -1,0 +1,159 @@
+:root {
+  --dbrown: rgba(52, 47, 38, 1);
+  --gbrown: rgba(204, 163, 83, 1);
+}
+.text-warning {
+  color: rgba(204, 163, 83, 1) !important;
+}
+.bg-warning {
+  background-color: rgba(204, 163, 83, 1) !important;
+}
+.dbrown {
+  color: rgba(52, 47, 38, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  background: var(--dbrown);
+}
+.navbar-toggler {
+  color: var(--dbrown);
+  background-color: var(--gbrown);
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: var(--gbrown);
+  text-decoration: none; /* Remove the default underline */
+  position: relative; /* Required for absolute positioning of the custom underline */
+  font-weight: bold;
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 2px; /* Adjust the position to align with the text */
+  left: 10px;
+  width: 40%; /* Set the underline width to 50px */
+  height: 2px; /* Set the underline height to your preference */
+  background-color: var(--gbrown);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+i {
+  background-color: var(--gbrown);
+}
+.form-control::placeholder {
+  color: white;
+  opacity: 0.25;
+}
+/* home  */
+#Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url(./Img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fs-1 {
+  font-size: 2.5rem !important;
+}
+.home div {
+  backdrop-filter: blur(3px);
+}
+.home hr {
+  width: 180px;
+  border: 1px solid #ffc34a;
+}
+/* Book */
+#Book {
+  background: rgba(255, 245, 219, 1);
+}
+.book hr {
+  width: 90px;
+  border: 1px solid #ffc34a;
+}
+.e-book div {
+  border: 2px solid rgba(204, 163, 83, 1);
+}
+/* Featured Companies  */
+.companies hr {
+  border: 1px solid rgba(204, 163, 83, 1);
+  width: 100px;
+}
+.companies .row div {
+  background-color: rgb(248, 245, 238);
+}
+/* we-offer */
+#we-offer {
+  background: #fff5e0;
+}
+.row .left hr {
+  border: 2px solid rgb(202, 158, 69);
+  background-color: #cca353;
+}
+/* Community */
+#Community hr {
+  border: 2px solid var(--gbrown);
+  width: 90px;
+}
+/* Footer Section */
+#Footer {
+  background: var(--dbrown);
+}
+#Footer .container-lg .A .social-links div {
+  /* background: #cca353; */
+}
+.C input {
+  border: 2px solid rgba(204, 163, 83, 1);
+}
+.C div span {
+  /* background: rgba(204, 163, 83, 1); */
+}
+#Footer .container-lg .C div a,
+#Footer .container-lg .B ul li a {
+  color: #fff5e0;
+}
+#Footer .container-lg .C div a:hover {
+  color: #cca353 !important;
+}
+#Footer .container-lg .B ul li a:hover {
+  color: #cca353;
+}
+#Footer .privacy_rights div a {
+  color: #cca353;
+}
+#Footer .privacy_rights div a:hover {
+  color: #fff5e0;
+}
+/* -----Scrollbar  custumization-------------- */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 245, 224, 1);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#e6c176, #e6c176);
+  border-radius: 4px;
+}
+/* media Query */
+@media screen and (max-width: 992px) {
+  nav .nav .navbar-collapse ul li {
+    margin: auto !important;
+  }
+
+  nav .nav .navbar-collapse form {
+    justify-content: center !important;
+    margin: 0 !important;
+  }
+  nav .nav .navbar-collapse form div {
+    margin: 0 10px;
+  }
+  nav .nav .navbar-collapse form button {
+    margin: 0 10px;
+  }
+}
